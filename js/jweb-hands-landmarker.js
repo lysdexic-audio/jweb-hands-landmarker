@@ -172,8 +172,6 @@ function onResultsHands(results) {
 
   const output = {};
 
-  outputMax(JSON.stringify(results));
-
   if (results.handednesses) {
     for (const hand of results.handednesses) {
       Object.values(HAND_LANDMARKS).forEach(([landmark, index]) => { 
